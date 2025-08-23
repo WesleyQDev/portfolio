@@ -1,0 +1,302 @@
+/* Fonte  */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body no geral  */
+body {
+  background-color: #0d1117;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header  */
+#header {
+  background-color: #010409;
+  padding: 15px;
+  text-align: center;
+}
+
+#header span {
+  color: lightblue;
+}
+
+#logo,
+#menu {
+  padding: 10;
+}
+
+#header a:link,
+#header a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#header a:hover {
+  color: #0066cc;
+  background: #ffffff;
+  text-decoration: none;
+}
+
+.white {
+  color: #ffffff;
+}
+
+/* Containers */
+#content {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.left-side {
+  background-color: #2f2f2f;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.right-side {
+  margin: 0 auto;
+}
+
+.right-side a {
+  display: block;
+  font-weight: 400;
+  background-color: #2f2f2f;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+/* Profile */
+.profile {
+  border: solid #3d444d 1px;
+  border-radius: 8px;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-left {
+  flex: 1;
+}
+
+.profile-left h1 {
+  border-bottom: 1px solid #3d444d;
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.2rem;
+  font-size: 2em;
+}
+
+.profile-right {
+  float: right;
+}
+
+.profile-right img {
+  width: 8em;
+  height: 8em;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+  border: 2px solid #eee;
+}
+
+.left {
+  text-align: left;
+}
+
+#bio {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Container */
+h2 {
+  margin-bottom: 2rem;
+}
+
+.formacao-container p {
+  font-weight: bold;
+}
+
+.formacao-container p span {
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+.formacao-container span {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.formacao-container hr {
+  margin: 2rem auto;
+}
+
+/* Contato */
+.contato-lista {
+  list-style: none;
+  padding: 0;
+  margin-top: 18px;
+}
+
+.contato-lista li {
+  margin-bottom: 14px;
+  font-size: 1.15em;
+  color: #fff;
+}
+
+.contato-lista a {
+  color: #27a6ff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contato-lista a:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+/* Portfólio */
+.portfolio-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.card-projeto {
+  background: none;
+  border: solid #3d444d 1px;
+  border-radius: 16px;
+  color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-conteudo {
+  padding: 24px 20px;
+}
+
+.card-projeto:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 6px 24px rgba(255, 255, 255, 0.1);
+}
+.card-projeto h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 1.3em;
+}
+.card-projeto p {
+  margin-bottom: 16px;
+  color: #cfd8dc;
+}
+.btn-github {
+  display: inline-block;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  text-decoration: underline;
+  font-weight: 600;
+  border: 1px solid #fff;
+  background: none;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-github:hover {
+  color: #cfd8dc;
+  background: none;
+}
+
+.img-projeto {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 0;
+  display: block;
+  background: #212121;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Site no modo PC*/
+@media screen and (min-width: 800px) {
+  #content {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .left-side {
+    float: left;
+    background-color: #0d1117;
+    padding: 2rem;
+    width: 50vw;
+  }
+
+  .right-side {
+    float: right;
+    width: 22vw;
+  }
+
+  .right-side a {
+    display: block;
+    background-color: #0d1117;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .profile {
+    flex-direction: row;
+    align-items: center;
+    padding: 2.5rem 3rem;
+    gap: 2.5rem;
+  }
+
+  .profile-left h1 {
+    font-size: 2.5em;
+  }
+
+  .profile-right img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Animação do Header */
+@keyframes destaque-titulo-once {
+  0% {
+    letter-spacing: 0;
+    color: #fff;
+    text-shadow: none;
+  }
+  40% {
+    letter-spacing: 2px;
+    color: lightblue;
+    text-shadow: 0 0 8px lightblue;
+  }
+  60% {
+    letter-spacing: 2px;
+    color: lightblue;
+    text-shadow: 0 0 12px lightblue;
+  }
+  100% {
+    letter-spacing: 0;
+    color: #fff;
+    text-shadow: none;
+  }
+}
+
+#logo h1 {
+  animation: destaque-titulo-once 1.7s ease-in-out 1;
+}
