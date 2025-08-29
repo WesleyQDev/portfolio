@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+/* Texto a esquerda*/
+.left {
+  text-align: left;
+}
+
 /* Body no geral  */
 body {
   background-color: #0d1117;
@@ -109,16 +114,12 @@ body {
   border: 2px solid #eee;
 }
 
-.left {
-  text-align: left;
-}
-
 #bio {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
-/* Container */
+/* Container*/
 h2 {
   margin-bottom: 2rem;
 }
@@ -141,29 +142,55 @@ h2 {
   margin: 2rem auto;
 }
 
-/* Contato */
-.contato-lista {
-  list-style: none;
-  padding: 0;
-  margin-top: 18px;
+/* Formulário de contato*/
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 400px;
+  margin: 2em auto 0 auto;
+  padding: 1.5em;
+  border-radius: 10px;
 }
 
-.contato-lista li {
-  margin-bottom: 14px;
-  font-size: 1.15em;
+.form-contato label {
+  font-weight: 500;
+  margin-bottom: 0.2em;
   color: #fff;
 }
 
-.contato-lista a {
-  color: #27a6ff;
-  text-decoration: none;
-  transition: color 0.2s;
+.form-contato input,
+.form-contato textarea {
+  padding: 0.7em;
+  border-radius: 6px;
+  border: 1px solid #3d444d;
+  background: #181c22;
+  color: #fff;
+  font-size: 1em;
+  margin-bottom: 0.5em;
 }
 
-.contato-lista a:hover {
-  color: #0066cc;
-  text-decoration: underline;
+.form-contato input:focus,
+.form-contato textarea:focus {
+  outline: 1px solid #27a6ff;
 }
+
+.form-contato button {
+  padding: 0.7em 1.2em;
+  border-radius: 6px;
+  border: none;
+  background: #27a6ff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+
+.form-contato button:hover {
+  background: #2196f3;
+}
+
 
 /* Portfólio */
 .portfolio-cards {
@@ -189,16 +216,19 @@ h2 {
   transform: translateY(-4px) scale(1.02);
   box-shadow: 0 6px 24px rgba(255, 255, 255, 0.1);
 }
+
 .card-projeto h3 {
   margin-top: 0;
   margin-bottom: 10px;
   color: #fff;
   font-size: 1.3em;
 }
+
 .card-projeto p {
   margin-bottom: 16px;
   color: #cfd8dc;
 }
+
 .btn-github {
   display: inline-block;
   color: #fff;
@@ -210,6 +240,7 @@ h2 {
   background: none;
   transition: background 0.2s, color 0.2s;
 }
+
 .btn-github:hover {
   color: #cfd8dc;
   background: none;
@@ -229,6 +260,7 @@ h2 {
   border: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Site no modo PC*/
 @media screen and (min-width: 800px) {
