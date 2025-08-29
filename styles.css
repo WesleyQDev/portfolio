@@ -191,7 +191,6 @@ h2 {
   background: #2196f3;
 }
 
-
 /* Portfólio */
 .portfolio-cards {
   display: flex;
@@ -260,7 +259,6 @@ h2 {
   border: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 /* Site no modo PC*/
 @media screen and (min-width: 800px) {
